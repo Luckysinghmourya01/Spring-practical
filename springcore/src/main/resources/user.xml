@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="com.rays.springcore.UserBean" name="user">
+
+		<property name="firstName">
+			<value>ashok</value>
+		</property>
+
+
+		<property name="lastName" value="mourya"></property>
+
+		<property name="email">
+			<value>ashok@gmail.com</value>
+		</property>
+
+		<property name="mobileNo" value="7247084759"></property>
+	</bean>
+
+
+</beans>
