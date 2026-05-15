@@ -4,18 +4,36 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="hhtp://www.springframework.org/schema/context"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
   https://www.springframework.org/schema/beans/spring-beans.xsd
   http://www.springframework.org/schema/context
   http://www.springframework.org/schema/context/spring-context.xsd">
 
+	<!-- c schema tag ka use kr ke -->
+	<!-- <bean class="com.rays.constructor.Person" name="person1" c:id="1" c:name="aman" 
+		c:email="aman@gmail.com" c:phone="885525255"> -->
+
 	<bean class="com.rays.constructor.Person" name="person1">
 		<constructor-arg>
 			<value>1</value>
 		</constructor-arg>
-
 		<constructor-arg value="lucky"></constructor-arg>
 		<constructor-arg value="lucky11@gmail.com"></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>7880011351</value>
+				<value>4457567887</value>
+				<value>917954433</value>
+			</list>
+		</constructor-arg>
+
+	</bean>
+
+	<bean class="com.rays.constructor.Addition" name="add">
+
+		<constructor-arg value="10" type="int"></constructor-arg>
+		<constructor-arg value="20" type="int"></constructor-arg>
 	</bean>
 
 </beans>

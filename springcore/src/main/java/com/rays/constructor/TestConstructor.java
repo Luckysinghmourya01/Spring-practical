@@ -12,6 +12,11 @@ public class TestConstructor {
 		Person person = (Person) context.getBean("person1");
 		
 		System.out.println(person);
-
+		
+	Addition add = (Addition)	context.getBean("add");
+	
+	add.doSum();
+	
 	}
 }
+
