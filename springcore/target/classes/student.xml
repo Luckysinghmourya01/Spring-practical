@@ -9,7 +9,7 @@
   https://www.springframework.org/schema/beans/spring-beans.xsd
   http://www.springframework.org/schema/context
   http://www.springframework.org/schema/context/spring-context.xsd">
-
+ 
 	<bean class="com.rays.springcore.StudentBean" name="student1">
 		<property name="id">
 			<value>1</value>
