@@ -9,18 +9,18 @@
   http://www.springframework.org/schema/context
   http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.rays.autowire.bytype.Address" name="address">
+	<bean class="com.rays.autowire.bytype.Address" name="address1">
 		<property name="city" value="indore"></property>
 		<property name="code" value="454775"></property>
 	</bean>
 
-	<bean class="com.rays.autowire.bytype.Address" name="address1">
+	<!-- <bean class="com.rays.autowire.bytype.Address" name="address2">
 		<property name="city" value="mumbai"></property>
 		<property name="code" value="464775"></property>
-	</bean>
+	</bean> -->
 
 	<bean class="com.rays.autowire.bytype.Employe" name="employe"
-		autowire="constructor"></bean>
+		autowire="byType"></bean>
 
 </beans>
   

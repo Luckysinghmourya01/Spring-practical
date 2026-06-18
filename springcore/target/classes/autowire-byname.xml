@@ -8,10 +8,10 @@
   https://www.springframework.org/schema/beans/spring-beans.xsd
   http://www.springframework.org/schema/context
   http://www.springframework.org/schema/context/spring-context.xsd">
-  
-  <bean class="com.rays.autowire.byName.UserImplement" name="user2"></bean>
-  
-  <bean class="com.rays.autowire.byName.UserServices" name="user1"
-	autowire="byType"></bean>
-  
-  </beans>
+
+	<bean class="com.rays.autowire.byName.UserImplement" name="user"></bean>
+
+	<bean class="com.rays.autowire.byName.UserServices" name="user1"
+		autowire="byName"></bean>
+
+</beans>

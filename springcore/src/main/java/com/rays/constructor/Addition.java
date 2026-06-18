@@ -1,4 +1,4 @@
-package com.rays.constructor;
+ package com.rays.constructor;
 
 public class Addition {
 
@@ -16,6 +16,7 @@ public class Addition {
 		super();
 		this.a = (int) a;
 		this.b = (int) b;
+		System.out.println("double double");
 	}
 	
 	public Addition(String a, String b) {

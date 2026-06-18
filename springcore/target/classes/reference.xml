@@ -19,7 +19,7 @@
 		<property name="x" value="20"></property>
 
 		<property name="ob" ref="b">
-
+ 
 		</property>
 
 	</bean>

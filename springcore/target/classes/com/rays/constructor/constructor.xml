@@ -22,19 +22,16 @@
 		<constructor-arg value="lucky11@gmail.com"></constructor-arg>
 		<constructor-arg>
 			<list>
-				<value>7880011351</value>
-				<value>4457567887</value>
-				
-				<value>917954433</value>
+				<value>780493107</value>
+				<value>9996965796</value>
 			</list>
 		</constructor-arg>
 
 	</bean>
 
 	<bean class="com.rays.constructor.Addition" name="add">
-
-		<constructor-arg value="10" type="int"></constructor-arg>
-		<constructor-arg value="20" type="int"></constructor-arg>
+		<constructor-arg value="20" type="double"></constructor-arg>
+		<constructor-arg value="20" type="double"></constructor-arg>
 	</bean>
 
 </beans>

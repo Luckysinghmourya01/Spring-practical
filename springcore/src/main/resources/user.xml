@@ -10,7 +10,7 @@
 	<bean class="com.rays.springcore.UserBean" name="user">
 
 		<property name="firstName">
-			<value>ashok</value>
+			<value>lucky</value>
 		</property>
 
 
