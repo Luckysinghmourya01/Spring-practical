@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd
+  http://www.springframework.org/schema/util
+  http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<!--standalone List -->
+	<util:list list-class="java.util.ArrayList" id="1">
+		<value>aman</value>
+		<value>sumit</value>
+	</util:list>
+
+	<util:list list-class="java.util.LinkedList" id="2">
+		<value>9179564112</value>
+		<value>9996965796</value>
+	</util:list>
+	 
+	<!-- standalone Map -->
+
+	<util:map map-class="java.util.HashMap" id="3">
+		<entry key="1 month" value="50000"></entry>
+		<entry key="2 month" value="100000"></entry>
+	</util:map>
+
+	<bean class="com.rays.standalone.collection.Person" name="person">
+		<property name="name" ref="1"></property>
+
+		<property name="number" ref="2"></property>
+
+		<property name="salary" ref="3"></property>
+	</bean>
+
+</beans>
