@@ -2,12 +2,22 @@ package com.rays.standalone.collection;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 public class Person {
 
 	private List<String> name;
 	private List<String> number;
 	private Map<String, Integer> salary;
+	private Properties props;
+
+	public Properties getProps() {
+		return props;
+	}
+
+	public void setProps(Properties props) {
+		this.props = props;
+	}
 
 	public Map<String, Integer> getSalary() {
 		return salary;
@@ -35,6 +45,6 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", number=" + number + ", salary=" + salary + "]";
+		return "Person [name=" + name + ", number=" + number + ", salary=" + salary + ", props=" + props + "]";
 	}
 }

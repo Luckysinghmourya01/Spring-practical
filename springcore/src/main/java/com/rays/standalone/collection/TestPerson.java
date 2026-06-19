@@ -19,5 +19,9 @@ public class TestPerson {
 		System.out.println(person.getSalary());
 		System.out.println(person.getSalary().getClass().getName());
 
+		System.out.println("-------------------------");
+		System.out.println(person.getProps());
+
 	}
 }
+ 

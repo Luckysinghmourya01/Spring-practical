@@ -21,13 +21,20 @@
 		<value>9179564112</value>
 		<value>9996965796</value>
 	</util:list>
-	 
+
 	<!-- standalone Map -->
 
-	<util:map map-class="java.util.HashMap" id="3">
+	<util:map map-class="java.util.TreeMap " id="3">
 		<entry key="1 month" value="50000"></entry>
 		<entry key="2 month" value="100000"></entry>
 	</util:map>
+
+	<!-- Standalone properties -->
+
+	<util:properties id="4">
+		<prop key="driver">com.mysql.cj.jdbc.driver</prop>
+		<prop key="url">mysql:jdbc://localhost/3306/databse</prop>
+	</util:properties>
 
 	<bean class="com.rays.standalone.collection.Person" name="person">
 		<property name="name" ref="1"></property>
@@ -35,6 +42,7 @@
 		<property name="number" ref="2"></property>
 
 		<property name="salary" ref="3"></property>
+		<property name="props" ref="4"></property>
 	</bean>
 
 </beans>
