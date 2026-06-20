@@ -12,5 +12,16 @@ public class TestPerson {
 		Person person = context.getBean("person", Person.class);
 
 		System.out.println(person);
+		System.out.println("-----------------");
+
+		System.out.println(person.getNumber());
+
+		System.out.println(person.hashCode());
+
+		
+		  Person person1 = context.getBean("person", Person.class);
+		 
+		System.out.println(person1.hashCode());
+
 	}
 }

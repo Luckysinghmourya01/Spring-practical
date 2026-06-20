@@ -1,16 +1,31 @@
 package com.rays.sterotype.anotation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component("person") /*
-			 * agar hmm yha bean ka name nhi dete to by default class ke name se bean create
-			 * kr dega
-			 */
+@Component("person")
+@Scope("prototype") /* bean scope change krne k liya */
+/*
+ * agar hmm yha bean ka name nhi dete to by default class ke name se bean create
+ * kr dega
+ */
 public class Person {
 
 	private String name;
 	private String address;
+	@Value("#{num}")
+	private List<String> number;
+
+	public List<String> getNumber() {
+		return number;
+	}
+
+	public void setNumber(List<String> number) {
+		this.number = number;  
+	}
 
 	public String getName() {
 		return name;
