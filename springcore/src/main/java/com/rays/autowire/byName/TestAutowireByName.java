@@ -9,9 +9,8 @@ public class TestAutowireByName {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("autowire-byname.xml");
 
-		UserServices user = (UserServices)context.getBean("user1");
+		UserServices user = (UserServices) context.getBean("user1");
 
 		user.testAdd();
 	}
 }
- 

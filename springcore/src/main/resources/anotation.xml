@@ -10,17 +10,27 @@
 
 	<context:annotation-config></context:annotation-config>
 
-	<!-- <bean class="com.rays.autowire.anotation.Address" name="address">
-		<property name="city" value="mhow"></property>
-		<property name="code" value="778821"></property> 
+	<bean class="com.rays.autowire.anotation.Address" name="address">
+		<property name="city" value="pithampur"></property>
+		<property name="code" value="454775"></property>
 
-	</bean>-->
-	
-	<bean class="com.rays.autowire.anotation.AnoImplement" name="anotation"></bean>
-	
-	<bean class="com.rays.autowire.anotation.AnoService" name="user1"></bean>
+	</bean>
 
-	<!-- <bean class="com.rays.autowire.anotation.Employe" name="employe"></bean> -->
+	<bean class="com.rays.autowire.anotation.Address" name="address1">
+		<property name="city" value="indore"></property>
+		<property name="code" value="780493"></property>
+
+	</bean>
+
+
+
+	<bean class="com.rays.autowire.anotation.Employe" name="employe"></bean>
+
+
+	<!-- <bean class="com.rays.autowire.anotation.AnoImplement" name="anotation"></bean> 
+		<bean class="com.rays.autowire.anotation.AnoService" name="user1"></bean> -->
+
+
 
 
 </beans>

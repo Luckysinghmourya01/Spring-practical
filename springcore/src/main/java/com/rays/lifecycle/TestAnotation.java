@@ -13,7 +13,7 @@ public class TestAnotation {
 
 		System.out.println(bean);
 
-		context.registerShutdownHook();
+		
 
 	}
 }

@@ -12,12 +12,16 @@
   http://www.springframework.org/schema/util/spring-util.xsd">
 
 	<context:component-scan
-		base-package="com.rays.sterotype.anotation"></context:component-scan>
+		base-package="com.rays.sterotype."></context:component-scan>
 
-	<util:list list-class="java.util.ArrayList" id="num">
+	<util:list list-class="java.util.ArrayList" id="no">
 
-		<value>7804931017</value>
-		<value>969179564112</value>
+		<value>3725597671</value>
+		<value>255971671</value>
+
+
 	</util:list>
 
-</beans>	
+
+
+</beans>

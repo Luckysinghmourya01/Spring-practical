@@ -11,17 +11,18 @@ public class TestPerson {
 
 		Person person = context.getBean("person", Person.class);
 
+		System.out.println(person);
 		System.out.println(person.getName().getClass().getName());
 		System.out.println(person);
+		System.out.println("---------------------------");
 
-		System.out.println("------------------------------------");
-
-		System.out.println(person.getSalary());
 		System.out.println(person.getSalary().getClass().getName());
+		System.out.println(person.getSalary());
 
-		System.out.println("-------------------------");
-		System.out.println(person.getProps());
+		System.out.println("-------------------------------");
+
+		
+		System.out.println(person.getProp());
 
 	}
 }
- 

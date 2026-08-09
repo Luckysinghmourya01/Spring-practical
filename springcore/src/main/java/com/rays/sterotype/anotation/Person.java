@@ -1,4 +1,4 @@
-package com.rays.sterotype.anotation;
+ package com.rays.sterotype.anotation;
 
 import java.util.List;
 

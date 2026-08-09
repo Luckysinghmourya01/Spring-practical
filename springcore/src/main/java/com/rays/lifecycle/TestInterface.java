@@ -12,7 +12,8 @@ public class TestInterface {
 		InterfaceBean bean1 = (InterfaceBean) context.getBean("interface");
 
 		System.out.println(bean1);
-		
+
 		context.registerShutdownHook();
+
 	}
 }

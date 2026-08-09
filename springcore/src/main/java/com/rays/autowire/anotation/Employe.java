@@ -6,33 +6,26 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class Employe {
 
 	@Autowired
-	@Qualifier("address")
-	private Address address;
+	@Qualifier("address1")
+	private Address adress;
 
-	public Address getAddress() {
-		return address;
+	public Address getAdress() {
+		return adress;
 	}
 
-	@Autowired
-	public void setAddress(Address address) {
-		System.out.println("setting value");
-		this.address = address;
+//	@Autowired
+	public void setAdress(Address adress) {
+		System.out.println("set value");
+		this.adress = adress;
 	}
 
 	public Employe() {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	public Employe(Address address) {
-		super();
-		System.out.println("constructor");
-		this.address = address;
-	}
-
 	@Override
 	public String toString() {
-		return "Employe [address=" + address + "]";
+		return "Employe [adress=" + adress + "]";
 	}
 
 }

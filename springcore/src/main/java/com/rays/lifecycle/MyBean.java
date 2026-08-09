@@ -9,7 +9,6 @@ public class MyBean {
 	}
 
 	public void setName(String name) {
-		System.out.println("set Name");
 		this.name = name;
 	}
 
@@ -21,15 +20,14 @@ public class MyBean {
 	public String toString() {
 		return "MyBean [name=" + name + "]";
 	}
-	
+
 	public void init() {
-		
-		System.out.println("init method : bean created");
-	}
-	
-	public void destory() {
-		
-		System.out.println("destory method : close");
+
+		System.out.println("Inside init method");
 	}
 
+	public void destory() {
+
+		System.out.println("inside destory method");
+	}
 }

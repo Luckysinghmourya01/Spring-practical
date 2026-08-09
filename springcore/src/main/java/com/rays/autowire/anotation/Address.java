@@ -25,17 +25,9 @@ public class Address {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Address(String city, String code) {
-		super();
-		this.city = city;
-		this.code = code;
-	}
-
 	@Override
 	public String toString() {
 		return "Address [city=" + city + ", code=" + code + "]";
 	}
 	
-	
-
 }

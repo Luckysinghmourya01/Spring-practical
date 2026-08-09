@@ -7,23 +7,22 @@ import java.util.Properties;
 public class Person {
 
 	private List<String> name;
-	private List<String> number;
-	private Map<String, Integer> salary;
-	private Properties props;
+	private Map<String, String> salary;
+	private Properties prop;
 
-	public Properties getProps() {
-		return props;
+	public Properties getProp() {
+		return prop;
 	}
 
-	public void setProps(Properties props) {
-		this.props = props;
+	public void setProp(Properties prop) {
+		this.prop = prop;
 	}
 
-	public Map<String, Integer> getSalary() {
+	public Map<String, String> getSalary() {
 		return salary;
 	}
 
-	public void setSalary(Map<String, Integer> salary) {
+	public void setSalary(Map<String, String> salary) {
 		this.salary = salary;
 	}
 
@@ -35,16 +34,9 @@ public class Person {
 		this.name = name;
 	}
 
-	public List<String> getNumber() {
-		return number;
-	}
-
-	public void setNumber(List<String> number) {
-		this.number = number;
-	}
-
 	@Override
 	public String toString() {
-		return "Person [name=" + name + ", number=" + number + ", salary=" + salary + ", props=" + props + "]";
+		return "Person [name=" + name + ", salary=" + salary + "]";
 	}
+
 }

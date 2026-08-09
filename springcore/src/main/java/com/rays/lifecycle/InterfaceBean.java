@@ -26,7 +26,7 @@ public class InterfaceBean implements InitializingBean , DisposableBean {
 
 	public void afterPropertiesSet() throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println("init method");
+		System.out.println("init method by Interface");
 		
 	}
 

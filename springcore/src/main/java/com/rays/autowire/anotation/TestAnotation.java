@@ -8,14 +8,18 @@ public class TestAnotation {
 	public static void main(String[] args) {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("anotation.xml");
+
 		
-	AnoService user = 	context.getBean("user1", AnoService.class);
+		/*
+		 * AnoService user = context.getBean("user1", AnoService.class);
+		 * 
+		 * user.testAdd();
+		 */
 
-		//Employe employe = context.getBean("employe", Employe.class);
-
-		//System.out.println(employe);
-	
-	user.testAdd();
+		
+		  Employe employe = context.getBean("employe", Employe.class);
+		  
+		  System.out.println(employe);
+		 
 	}
 }
-   
