@@ -15,6 +15,8 @@ public class TestSpel {
 
 		System.out.println(spl.getW());
 		
+		System.out.println(spl.getName());
+		
 
 	}
 }

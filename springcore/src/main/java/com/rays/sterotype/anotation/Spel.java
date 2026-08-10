@@ -11,7 +11,6 @@ public class Spel {
 	private int z;
 	private double w;
 
-	
 	public double getW() {
 		return w;
 	}
@@ -25,7 +24,7 @@ public class Spel {
 		return z;
 	}
 
-	@Value("#{T(java.lang.Math).sqrt(10)}") /* class ki method ko use krne ka liya */
+	@Value("#{T(java.lang.Math).sqrt(25)}") /* class ki method ko use krne ka liya */
 	public void setZ(int z) {
 		this.z = z;
 	}
@@ -47,13 +46,28 @@ public class Spel {
 	public void setY(int y) {
 		this.y = y;
 	}
-	
-	@Value("#{new java.lang.String('lucky')}")
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public boolean isThisActive() {
+		return thisActive;
+	}
+
+	public void setThisActive(boolean thisActive) {
+		this.thisActive = thisActive;
+	}
+
+	@Value("#{new java.lang.String('lucky mourya')}") /* class ka object banane ke liye */
 	private String name;
 
 	@Value("#{8<3}") /* boolean ki tarah use kr skte h */
 	private boolean thisActive;
-
 
 	@Override
 	public String toString() {

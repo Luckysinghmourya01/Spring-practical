@@ -22,6 +22,9 @@
 
 	</util:list>
 
+	<bean class="com.rays.sterotype.anotation.Account" name="account"
+		scope="prototype"></bean>
+
 
 
 </beans>

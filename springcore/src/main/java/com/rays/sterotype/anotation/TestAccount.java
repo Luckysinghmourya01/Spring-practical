@@ -13,5 +13,14 @@ public class TestAccount {
 		System.out.println(account);
 		System.out.println(account.getNumber().getClass().getName());
 		System.out.println(account.getNumber());
+
+		System.out.println("-----------------------------------------------------");
+
+		System.out.println(account.hashCode());
+
+		Account account2 = context.getBean("account", Account.class);
+
+		System.out.println(account2.hashCode());
+
 	}
 }

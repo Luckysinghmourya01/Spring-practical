@@ -19,9 +19,7 @@ public class TestPerson {
 		System.out.println(person.hashCode());
 
 		
-		  Person person1 = context.getBean("person", Person.class);
 		 
-		System.out.println(person1.hashCode());
 
 	}
 }
