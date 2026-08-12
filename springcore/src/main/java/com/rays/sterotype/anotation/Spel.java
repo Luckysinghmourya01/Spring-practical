@@ -66,7 +66,7 @@ public class Spel {
 	@Value("#{new java.lang.String('lucky mourya')}") /* class ka object banane ke liye */
 	private String name;
 
-	@Value("#{8<3}") /* boolean ki tarah use kr skte h */
+	@Value("#{8> 3}") /* boolean ki tarah use kr skte h */
 	private boolean thisActive;
 
 	@Override
